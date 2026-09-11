@@ -1,7 +1,8 @@
 discord.py
 python-dotenv
 PyNaCl
-yt_dlp
+yt-dlp
 ffmpeg
 openai
 google-generativeai
+aiohttp
