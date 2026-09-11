@@ -1,5 +1,0 @@
-DISPLAY_NAME=Tiger
-MAIN=TigerMain.py
-MEMORY=512
-VERSION=recommended
-AUTORESTART=true
