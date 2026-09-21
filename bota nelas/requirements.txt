@@ -1,8 +1,0 @@
-discord.py
-python-dotenv
-PyNaCl
-yt-dlp
-ffmpeg
-openai
-google-generativeai
-aiohttp
