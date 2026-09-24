@@ -33,9 +33,7 @@ def save_config(config):
 def register_set_commands(bot):
     config = load_config()
 
-    # ═══════════════════════════════════════════════════════════════════
     # CANAIS PROIBIDOS (membros não podem enviar mensagem)
-    # ═══════════════════════════════════════════════════════════════════
 
     @bot.command(name="setforbidden")
     @commands.has_permissions(administrator=True)
@@ -84,9 +82,7 @@ def register_set_commands(bot):
         )
         await ctx.send(embed=embed)
 
-    # ═══════════════════════════════════════════════════════════════════
     # CANAIS TRANCADOS (cargos específicos não podem ver/enviar)
-    # ═══════════════════════════════════════════════════════════════════
 
     @bot.command(name="setlocked")
     @commands.has_permissions(administrator=True)
@@ -141,9 +137,7 @@ def register_set_commands(bot):
         )
         await ctx.send(embed=embed)
 
-    # ═══════════════════════════════════════════════════════════════════
     # PALAVRAS-CHAVE BANIDAS (filtro de conteúdo)
-    # ═══════════════════════════════════════════════════════════════════
 
     @bot.command(name="setword")
     @commands.has_permissions(administrator=True)
@@ -191,9 +185,7 @@ def register_set_commands(bot):
         )
         await ctx.send(embed=embed)
 
-    # ═══════════════════════════════════════════════════════════════════
     # LISTENERS - Auto-mod
-    # ═══════════════════════════════════════════════════════════════════
 
     @bot.listen("on_message")
     async def auto_mod_check(message):
